@@ -4,7 +4,7 @@ Welcome to the LEGO Education repository.
 
 ## About
 
-This repository is the home for LEGO Education projects and resources.
+This repository is the home for LEGO Education Python API documentation.
 
 ## Getting Started
 
