@@ -21,7 +21,7 @@ When the LEGO® Education Python API is imported into your Python code with `imp
 
 The LEGO Color constants are used in a variety of ways (Connection Card colors, Color Sensor detected colors, etc). Note that not all LEGO Color constants are available in each context.
 
-```
+```python
 LEGO_COLOR_NOCOLOR
 LEGO_COLOR_RED
 LEGO_COLOR_YELLOW
@@ -39,7 +39,7 @@ LEGO_COLOR_AZURE
 
 For use in `motor_set_end_state` and `movement_set_end_state` functions.
 
-```
+```python
 MOTOR_END_STATE_DEFAULT
 MOTOR_END_STATE_COAST
 MOTOR_END_STATE_BRAKE
@@ -53,7 +53,7 @@ MOTOR_END_STATE_SMART_BRAKE
 
 For use in `motor_run`, `motor_run_for_time`, `motor_run_for_degrees`, and `motor_run_to_absolute_position` functions.
 
-```
+```python
 MOTOR_MOVE_DIRECTION_CLOCKWISE
 MOTOR_MOVE_DIRECTION_COUNTERCLOCKWISE
 MOTOR_MOVE_DIRECTION_SHORTEST
@@ -64,7 +64,7 @@ MOTOR_MOVE_DIRECTION_LONGEST
 
 For use with `motorState` (via `MotorNotification`).
 
-```
+```python
 MOTOR_STATE_READY
 MOTOR_STATE_RUNNING
 MOTOR_STATE_STALLED
@@ -80,7 +80,7 @@ MOTOR_STATE_NOT_ALLOWED_TO_RUN
 
 For use with `gesture` (via `MotorNotification`).
 
-```
+```python
 MOTOR_GESTURE_NO_GESTURE
 MOTOR_GESTURE_SLOW_CLOCKWISE
 MOTOR_GESTURE_FAST_CLOCKWISE
@@ -93,7 +93,7 @@ MOTOR_GESTURE_WIGGLED
 
 When specifying motor in `done`, `motor_set_speed`, `motor_run`, `motor_run_for_time`, `motor_run_for_degrees`, `motor_reset_relative_position`, `motor_run_to_relative_position`, `motor_run_to_absolute_position`, `motor_set_duty_cycle`, `motor_stop`, `motor_set_end_state`, and `motor_set_acceleration` functions.
 
-```
+```python
 MOTOR_LEFT
 MOTOR_RIGHT
 MOTOR_BOTH
@@ -103,7 +103,7 @@ MOTOR_BOTH
 
 For use with `motorBitMask` (via `MotorNotification`).
 
-```
+```python
 MOTOR_BITS_LEFT
 MOTOR_BITS_RIGHT
 ```
@@ -112,7 +112,7 @@ MOTOR_BITS_RIGHT
 
 For use in `movement_move` and `movement_move_for_time` functions.
 
-```
+```python
 MOVEMENT_DIRECTION_FORWARD
 MOVEMENT_DIRECTION_BACKWARD
 MOVEMENT_DIRECTION_LEFT
@@ -123,7 +123,7 @@ MOVEMENT_DIRECTION_RIGHT
 
 For use in `movement_move_for_degrees` function.
 
-```
+```python
 MOVEMENT_MOVE_DIRECTION_FORWARD
 MOVEMENT_MOVE_DIRECTION_BACKWARD
 ```
@@ -132,7 +132,7 @@ MOVEMENT_MOVE_DIRECTION_BACKWARD
 
 For use in `movement_turn_for_degrees` function.
 
-```
+```python
 MOVEMENT_TURN_DIRECTION_LEFT
 MOVEMENT_TURN_DIRECTION_RIGHT
 ```
@@ -141,7 +141,7 @@ MOVEMENT_TURN_DIRECTION_RIGHT
 
 For use in `imu_set_yaw_face` function and with `orientation` and `yawFace` (via `ImuDeviceNotification`).
 
-```
+```python
 DEVICE_FACE_TOP
 DEVICE_FACE_FRONT
 DEVICE_FACE_RIGHT
@@ -154,7 +154,7 @@ DEVICE_FACE_LEFT
 
 For use with `gesture` (via `ImuGestureNotification`).
 
-```
+```python
 MOTION_GESTURE_NO_GESTURE
 MOTION_GESTURE_TAPPED
 MOTION_GESTURE_DOUBLE_TAPPED
@@ -167,7 +167,7 @@ MOTION_GESTURE_FREEFALL
 
 For use with `light_color` function.
 
-```
+```python
 LIGHT_PATTERN_SOLID
 LIGHT_PATTERN_BREATHE
 LIGHT_PATTERN_PULSE
@@ -180,7 +180,7 @@ LIGHT_PATTERN_DOUBLE_BLINK
 
 For use with `state` (via `ButtonStateNotification`).
 
-```
+```python
 BUTTON_STATE_RELEASED
 BUTTON_STATE_PRESSED
 ```
@@ -189,7 +189,7 @@ BUTTON_STATE_PRESSED
 
 For use with `beep` function.
 
-```
+```python
 SOUND_PATTERN_BEEP_SINGLE
 SOUND_PATTERN_BEEP_DOUBLE
 SOUND_PATTERN_BEEP_TRIPLE
@@ -200,7 +200,7 @@ SOUND_PATTERN_BEEP_UP_MIDDLE_DOWN
 
 For use with `UsbPowerState` (via `InfoDeviceNotification`).
 
-```
+```python
 USB_POWER_STATE_USB_NOT_CONNECTED
 USB_POWER_STATE_USB_CONNECTED
 ```
@@ -209,7 +209,7 @@ USB_POWER_STATE_USB_CONNECTED
 
 For use with `program_flow_notification` function.
 
-```
+```python
 PROGRAM_ACTION_START
 PROGRAM_ACTION_STOP
 ```

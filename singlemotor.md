@@ -23,7 +23,7 @@ The Single Motor allows precise control and monitoring of a single motor.
 
 Here is an example for running the single motor for 180-degrees.
 
-```
+```python
 import legoeducation as le
 
 # update these values to match the Connection Card
@@ -57,7 +57,7 @@ Reading data from the Single Motor can be done inline within your code or via a 
 
 ## Inline
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -86,7 +86,7 @@ exit(0) # successful execution
 
 ## Callback
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -131,7 +131,7 @@ There are many functions available for interacting with the Single Motor. Here a
 
 For controlling the motor:
 
-```
+```python
 singlemotor.motor_run(direction=le.MOTOR_MOVE_DIRECTION_COUNTERCLOCKWISE, speed=50) # counter-clockwise at speed 50%
 singlemotor.motor_run_for_degrees(degrees=360)
 singlemotor.motor_run_for_time(2000) # time in ms, so here: 2 seconds
@@ -143,7 +143,7 @@ singlemotor.motor_stop()
 
 Motor data (e.g. `singlemotor.motor`):
 
-```
+```python
 motorState # compare to Motor State constants
 absolutePos
 power
@@ -156,7 +156,7 @@ gesture # compare to Motor Gesture constants
 
 For control of the button light color and sound beeps:
 
-```
+```python
 singlemotor.light_color(le.LEGO_COLOR_BLUE, pattern=le.LIGHT_PATTERN_BREATHE, intensity=100)
 singlemotor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 ```
@@ -165,7 +165,9 @@ singlemotor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 
 For more information about interacting with the Single Motor through the LEGO® Education Python API, use the Python `help()` command:
 
-`help(le.SingleMotor)`
+```python
+help(le.SingleMotor)
+```
 
 ---
 

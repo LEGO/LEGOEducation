@@ -17,7 +17,7 @@
 
 You can combine multiple LEGO® Education hardware in one program.  Here is an example of a Single Motor and Color Sensor.
 
-```
+```python
 import legoeducation as le
 import time
 

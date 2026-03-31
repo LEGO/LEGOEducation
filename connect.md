@@ -30,19 +30,31 @@ An example of the full *Connect and Run* process, for a Single Motor, can be fou
 
 To use the LEGO Education Python API in your Python code, you need to import the library. Use the `le` alias for easily referencing it later.
 
-`import legoeducation as le`
+```python
+import legoeducation as le
+```
 
 ## 2. Define a local variable
 
 Define a local variable for the type of hardware you are using (example: Single Motor).
 
-`singlemotor = le.SingleMotor()`
+```python
+singlemotor = le.SingleMotor()
+```
 
 Examples for the four types of LEGO Education hardware:
-- `singlemotor = le.SingleMotor()`
-- `doublemotor = le.DoubleMotor()`
-- `colorsensor = le.ColorSensor()`
-- `controller = le.Controller()`
+- ```python
+  singlemotor = le.SingleMotor()
+  ```
+- ```python
+  doublemotor = le.DoubleMotor()
+  ```
+- ```python
+  colorsensor = le.ColorSensor()
+  ```
+- ```python
+  controller = le.Controller()
+  ```
 
 ## 3. Connect
 
@@ -52,7 +64,9 @@ By default, the `connect()` function will connect to the first found. In environ
 
 For example, to connect to a Azure connection card with serial number '3683':
 
-`singlemotor.connect(card_color=le.LEGO_COLOR_AZURE, card_serial="3683")`
+```python
+singlemotor.connect(card_color=le.LEGO_COLOR_AZURE, card_serial="3683")
+```
 
 ![LEGO Education Connection Cards](./img/ConnectionCards.png)
 
@@ -72,7 +86,7 @@ You can create as many LEGO Education hardware connections as you like, but this
 
 The `connected` Boolean can be used to check if the connection attempt was successful or not. For instance, if no hardware was connected, then you could exit the program.
 
-```
+```python
 if not singlemotor.connected:
 	print('Error connecting to Single Motor.')
 	exit(1) # error connecting
@@ -91,7 +105,9 @@ Once successfully connected, you can use the LEGO Education Python API to intera
 
 When done interacting, disconnect from the device with the `disconnect()` function. The hardware will disconnect from your computer and return to broadcast mode (ready to connect again).
 
-`singlemotor.disconnect()`
+```python
+singlemotor.disconnect()
+```
 
 ## Example
 
