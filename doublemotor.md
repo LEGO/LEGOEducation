@@ -23,7 +23,7 @@ The Double Motor allows precise control and monitoring of a double motor.
 
 Here is an example for driving forward for 180-degrees.
 
-```
+```python
 import legoeducation as le
 
 # update these values to match the Connection Card
@@ -57,7 +57,7 @@ Reading data from the Double Motor can be done inline within your code or via a 
 
 ## Inline
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -86,7 +86,7 @@ exit(0) # successful execution
 
 ## Callback
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -134,21 +134,21 @@ There are many functions available for interacting with the Double Motor. Here a
 
 Controlling both motors together (*Movement Functions*):
 
-```
+```python
 doublemotor.movement_move_for_time(time_ms=1000, direction=le.MOVEMENT_DIRECTION_BACKWARD, speed=50)
 doublemotor.movement_turn_for_degrees(degrees=90, direction=le.MOVEMENT_TURN_DIRECTION_LEFT)
 ```
 
 Controlling motors independently (*Motor Functions*):
 
-```
+```python
 # Rotate the right side of the Double Motor counterclockwise at 50% speed.
 doublemotor.motor_run(direction=le.MOTOR_MOVE_DIRECTION_COUNTERCLOCKWISE, motor=le.MOTOR_RIGHT, speed=50)
 ```
 
 Additional examples of controlling one motor:
 
-```
+```python
 doublemotor.motor_run_for_degrees(360, motor=le.MOTOR_LEFT, speed=30)
 doublemotor.motor_run_for_time(2000)
 doublemotor.motor_stop()
@@ -156,7 +156,7 @@ doublemotor.motor_stop()
 
 ## IMU Settings
 
-```
+```python
 doublemotor.imu_reset_yaw_axis(0) # reset yaw to new value
 doublemotor.imu_set_yaw_face(yaw_face=le.DEVICE_FACE_LEFT) # set to Device Face constants
 ```
@@ -165,7 +165,7 @@ doublemotor.imu_set_yaw_face(yaw_face=le.DEVICE_FACE_LEFT) # set to Device Face 
 
 Motor data (from each motor, e.g. `doublemotor.motor[le.MOTOR_LEFT]`):
 
-```
+```python
 motorBitMask # compare to Motor Bits constants
 motorState # compare to Motor State constants
 absolutePos
@@ -177,7 +177,7 @@ gesture # compare to Motor Gesture constants
 
 IMU data (from the internal IMU, e.g. `doublemotor.imu_device`).
 
-```
+```python
 orientation # compare to Device Face constants
 yawFace # compare to Device Face constants
 yaw
@@ -193,7 +193,7 @@ gyroscopeZ
 
 IMU gesture (from the internal IMU, e.g. `doublemotor.imu_gesture`).
 
-```
+```python
 gesture # compare to Motion Gesture constants
 ```
 
@@ -201,7 +201,7 @@ gesture # compare to Motion Gesture constants
 
 For control of the button light color and sound beeps:
 
-```
+```python
 doublemotor.light_color(le.LEGO_COLOR_BLUE, pattern=le.LIGHT_PATTERN_BREATHE, intensity=100)
 doublemotor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 ```
@@ -210,7 +210,9 @@ doublemotor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 
 For more information about interacting with the Double Motor through the LEGO® Education Python API, use the Python `help()` command:
 
-`help(le.DoubleMotor)`
+```python
+help(le.DoubleMotor)
+```
 
 ---
 

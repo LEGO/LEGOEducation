@@ -25,7 +25,7 @@ Reading data from the Controller can be done inline within your code or via a ca
 
 ## Inline
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -54,7 +54,7 @@ exit(0) # successful execution
 
 ## Callback
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -99,7 +99,7 @@ There are other available ways for interacting with the Controller. Here are a f
 
 Controller data (from the controller, e.g. `controller.sensor`):
 
-```
+```python
 leftPercent
 rightPercent
 leftAngle
@@ -110,7 +110,7 @@ rightAngle
 
 For control of the button light color and sound beeps:
 
-```
+```python
 controller.light_color(le.LEGO_COLOR_BLUE, pattern=le.LIGHT_PATTERN_BREATHE, intensity=100)
 controller.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 ```
@@ -119,7 +119,9 @@ controller.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 
 For more information about interacting with the Controller through the LEGO® Education Python API, use the Python `help()` command:
 
-`help(le.Controller)`
+```python
+help(le.Controller)
+```
 
 ---
 

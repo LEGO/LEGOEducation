@@ -25,7 +25,7 @@ Reading data from the Color Sensor can be done inline within your code or via a 
 
 ## Inline
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -54,7 +54,7 @@ exit(0) # successful execution
 
 ## Callback
 
-```
+```python
 import legoeducation as le
 import time
 
@@ -99,7 +99,7 @@ There are other available ways for interacting with the Color Sensor. Here are a
 
 Color data (from the color sensor, e.g. `colorsensor.sensor`):
 
-```
+```python
 color # compare to LEGO Color constants
 reflection
 rawRed
@@ -114,7 +114,7 @@ value
 
 For control of the button light color and sound beeps:
 
-```
+```python
 colorsensor.light_color(le.LEGO_COLOR_BLUE, pattern=le.LIGHT_PATTERN_BREATHE, intensity=100)
 colorsensor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 ```
@@ -123,7 +123,9 @@ colorsensor.beep(pattern=le.SOUND_PATTERN_BEEP_SINGLE, frequency=440)
 
 For more information about interacting with the Color Sensor through the LEGO® Education Python API, use the Python `help()` command:
 
-`help(le.ColorSensor)`
+```python
+help(le.ColorSensor)
+```
 
 ---
 

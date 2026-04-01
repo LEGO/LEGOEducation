@@ -17,7 +17,7 @@
 
 You can combine multiple LEGO® Education hardware in one program.  Here is an example of a Double Motor and Controller.
 
-```
+```python
 import legoeducation as le
 import time
 
