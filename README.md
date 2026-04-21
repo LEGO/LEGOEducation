@@ -48,7 +48,7 @@ The LEGO Education Python API is hosted on PyPI (https://pypi.org/project/legoed
 
 ## Running Programs
 
-Open a new program or an example program (see [example.py](./examples/example.py) for Single Motor) in your device’s IDE (local coding environment). For help choosing a coding environment compatible with Python, visit [Python.org’s IDE Wiki](http://wiki.python.org/moin/IntegratedDevelopmentEnvironmentswiki.python.org/moin/IntegratedDevelopmentEnvironments).
+Open a new program or an example program (see example.py for Single Motor) in your device’s IDE (local coding environment). You can use the Python package with your preferred Integrated Development Environment (IDE), e.g. VSCode, running locally.
 
 To execute a program (e.g. `example.py`), navigate to the folder and run the following command. Make sure the LEGO Education motor(s) and sensor(s) you are using are charged, powered on, and broadcasting.
 
@@ -56,7 +56,7 @@ To execute a program (e.g. `example.py`), navigate to the folder and run the fol
 
 ## Troubleshooting
 
-- **Firmware errors:** Ensure your LEGO Education hardware’s firmware is on the latest version. See [LEGO Education’s FAQ](https://teach.legoeducation.com/en-us/frequently-asked-questions) for information on updating hardware.
+- **Firmware errors:** Ensure your LEGO Education hardware’s firmware is on the latest version. See [LEGO Education’s FAQ](https://teach.legoeducation.com/en-us/computer-science/frequently-asked-questions) for information on updating hardware.
 
 - **Connection issues:** Confirm your Bluetooth setup and verify device compatibility with your OS.
 
