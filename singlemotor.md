@@ -145,7 +145,7 @@ Motor data (e.g. `singlemotor.motor`):
 
 ```python
 motorState # compare to Motor State constants
-absolutePos
+absolutePosition
 power
 speed
 position
